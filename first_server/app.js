@@ -23,7 +23,6 @@ app.get("/api/v1/getAllBirds", (req,res) =>{
 app.get("/api/v1/getBirdById/:id", (req,res) =>{
     const bird = birdArray.find(birdId => birdId.id === parseInt(req.params.id))
     res.send(bird)
-
 })
 
 
