@@ -18,7 +18,9 @@ const birdArray= [{
 ]
 app.get("/api/v1/getAllBirds", (req,res) =>{
     res.send({birdArray})
-    
+
+
+
 })
 
 app.get("/api/v1/getBirdById/:id", (req,res) =>{
