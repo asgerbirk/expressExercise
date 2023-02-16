@@ -3,27 +3,26 @@ const app = express();
 
 app.use(express.json());
 
-const birdArray= [{
+const birdArray = [{
     id: 1,
-    name:"john",
-    size:"big",
-    color:"yellow"
+    name: "john",
+    size: "big",
+    color: "yellow"
 },
     {
         id: 2,
-        name:"zanduu",
+        name: "zanduu",
         size: "small",
         color: "blue"
     }
 ]
-app.get("/api/v1/getAllBirds", (req,res) =>{
+app.get("/birds", (req, res) => {
     res.send({birdArray})
 })
 
-app.get("/api/v1/getBirdById/:id", (req,res) =>{
+app.get("/bird/:id", (req, res) => {
     const bird = birdArray.find(birdId => birdId.id === parseInt(req.params.id))
     res.send(bird)
 })
-
 
 app.listen(8080)
