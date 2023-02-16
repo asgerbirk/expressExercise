@@ -16,6 +16,7 @@ const birdArray = [{
         color: "blue"
     }
 ]
+
 app.get("/birds", (req, res) => {
     res.send({birdArray})
 })
