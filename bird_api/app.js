@@ -1,7 +1,6 @@
 const express = require("express")
 const app = express();
 
-//The express.json() function is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
 app.use(express.json());
 
 const birdArray = [
