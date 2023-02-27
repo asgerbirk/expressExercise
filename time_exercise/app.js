@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/time/time.html")
 })
 
+app.get("/api/time", (req, res) => {
+    res.send({message: "hej"})
+})
+
 
 const PORT = 8080;
 
@@ -18,3 +22,5 @@ app.listen(PORT, (error) => {
     }
     console.log("Server is running on port", PORT)
 })
+
+module.exports = app;
