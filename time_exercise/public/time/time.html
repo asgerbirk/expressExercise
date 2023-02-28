@@ -2,15 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions leauge countdown</title>
+    <link rel="stylesheet" href="/time/time.css">
 </head>
 <body>
+<h1>Teams remaining in the tournament</h1>
 
-<h1>hej</h1>
+<div id="teams">
+</div>
 
-<button onclick="">click here</button>
+<div id="countdown">
+</div>
 
-<script src="time.js"></script>
+<label for="team1">Select first team:</label>
+<select id="team1" name="team1">
+    <option value="">--Please select a team--</option>
+</select>
 
+<label for="team2">Select second team:</label>
+<select id="team2" name="team2">
+    <option value="">--Please select a team--</option>
+</select>
+
+<script src="/time/time.js"></script>
 </body>
 </html>
