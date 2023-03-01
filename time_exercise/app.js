@@ -22,7 +22,7 @@ const teams = [
     {id: 16, name: "Tottenham", imgURL: "https://img.uefa.com/imgml/TP/teams/logos/100x100/1652.png"}
 ]
 
-app.get("/championsLeauge", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/time/time.html")
 })
 

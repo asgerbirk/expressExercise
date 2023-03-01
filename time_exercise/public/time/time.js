@@ -18,18 +18,31 @@ fetch("api/teams")
         })
     })
 
+const teamSelect1 = document.querySelector('#teamSelect1');
+
 fetch("api/teams")
-    .then(response => response.json())
+    .then(respone => respone.json())
     .then(result => {
         result.data.forEach(team => {
-            const option1 = document.createElement("option");
-            option1.value = team;
-            option1.text = team;
-            document.getElementById("team1").appendChild(option1);
-        })
+            const option = document.createElement('option');
+            option.text = team.name;
+            option.value = team.id;
+            teamSelect1.add(option);
+        });
+    });
 
+const teamSelect2 = document.querySelector('#teamSelect2');
 
-    })
+fetch("api/teams")
+    .then(respone => respone.json())
+    .then(result => {
+        result.data.forEach(team => {
+            const option = document.createElement('option');
+            option.text = team.name;
+            option.value = team.id;
+            teamSelect2.add(option);
+        });
+    });
 
 
 const countDownDiv = document.getElementById("countdown")
