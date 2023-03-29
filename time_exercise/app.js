@@ -23,7 +23,7 @@ const teams = [
 ]
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/time/time.html")
+    res.sendFile(__dirname + "/public/CRUD/CRUD.html")
 })
 
 app.get("/api/teams", (req, res) => {

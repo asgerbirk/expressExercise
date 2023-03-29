@@ -1,0 +1,70 @@
+<div class="scoping">
+    <h2>Understand scoping in Javascript and know to always use const if you can get away with it otherwise let.</h2>
+    <p>Scoping in JavaScript refers to the accessibility of the variables. It is bad practice to use var and in ES6
+        const and let was introduce to take over. Var is accessible in the whole function while const and let are
+        accessible in the block of code where they are
+        declared. Const maintain the constant value, while let is a value that can change. </p>
+    <div><img id="screenshot" src="../../assets/images/scoping1.png"></div>
+    <p> Here we have to functions where the var is declared as I. The problem with that is I is accessible in the entire
+        function, so the result of the first function will give 6,6,6,6,6,6. The right way to solve this problem is to
+        use let instead. Let has block scope which means it is only accessible where it is declared. </p>
+</div>
+
+<div class="packagejson">
+    <h2>Understands Package.json and can set it up by hand.</h2>
+    <p>Package.json is a file in node.js that contains the meta information, dependencies and scripts. The dependencies
+        are the key in package.json because they defined all the dependecies in the project, for example express and
+        nodemon. </p>
+    <p>They way you set the package.json up is going(cd change directory) to the folder where you want the file. Open
+        the terminal and enter the command: </p>
+    <div><img id="screenshot1" src="../../assets/images/npm1.png"></div>
+    <p>Npm init –y will automatically create a new package.json file with default values. </p>
+    <p>After the package.json file is created then you can download express and nodemon with two commands </p>
+    <div><img id="screenshot2" src="../../assets/images/npm2.png"></div>
+    <div><img id="screenshot3" src="../../assets/images/npm3.png"></div>
+    <p>Now you have package.json with the dependecies:</p>
+    <div><img id="screenshot4" src="../../assets/images/npm4.png"></div>
+    <p>You can also set up in manually by going to the folder where you want you package.json file. Then you can in the
+        terminal create a command where you create an empty package.json file: "touch package.json". After that you can
+        manually write the dependencies by writing the key "express" and then the version "4.18.2"
+        After that you need to write a command in the terminal to install the depdencies which is:
+        npm install </p>
+</div>
+
+<div class="expressServer">
+    <h2>Express server</h2>
+    <div><img id="screenshot5" src="../../assets/images/express.png"></div>
+    <p>
+        This is an example of how you create a server instance with express. The first thing you have to do it to import
+        express and you do that with "require". After that you need to initialze an instance of the express framework.
+        Now we the object app that returns express and that means we can built our server and put it up running. In this
+        example we are running the server on port 8080 with the app.listen method. </p>
+    <div><img id="screenshot6" src="../../assets/images/express2.png"></div>
+    <p>This example is similar to the another one beside the first line of code. Here I have used modules to do that. In
+        my package.json I have "type": "module" and that allows us to use import instead of require. This is also
+        called ECMA script. ECMAscript is mainly used for our server-side code.</p>
+</div>
+
+<div class="getrequest">
+    <h2>Understands how to send data with GET requests over HTTP</h2>
+    <p> To send data with get request then we have to use query parameters and. Query parameters have to append at the
+        end of the URL with a question mark.
+        Here is an example of how to do that in express: </p>
+    <div><img id="screenshot7" src="../../assets/images/get.png"></div>
+    <div><img id="screenshot8" src="../../assets/images/get1.png"></div>
+</div>
+
+<div class="nodemodules">
+    <h2>Understand node.modules</h2>
+    <p>Node modules is a folder that stores and managed all the dependencies. When we use the command npm install to
+        install a dependecy then the node.modules get created automatically and in node.module each depedeency get its
+        own package, so when we run our application with nodemon og node then it looks in the node.modules folder.</p>
+</div>
+
+<div class="staticfiles">
+    <h2>Understands the security need for serving static files</h2>
+    <p>Serving static files tells the clients is allowed to use the files in the public folder. We are preventing them
+        to get access to our server. It secures and tells that the clients is allowed to use the files in the public
+        folder - it shouldnt get acess at my database and server.</p>
+    <div><img id="screenshot9" src="../../assets/images/static.png"></div>
+</div>

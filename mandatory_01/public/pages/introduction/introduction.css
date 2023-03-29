@@ -1,0 +1,74 @@
+.git-commands {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+
+.git-commands pre {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.datatypes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+.datatypes ul {
+
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.restapi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+
+}
+
+.node {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+.cleancode {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+.callback {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+#screenshot {
+    width: 300px;
+}
+
+#screenshot1 {
+    width: 1000px;
+}
