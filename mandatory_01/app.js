@@ -50,32 +50,27 @@ const serverClientSidePage = templateEngine.renderPage(serverClientSide, {
     tabTitle: "Server client side"
 })
 
-const login = templateEngine.readPage("./public/pages/login/login.html")
-const loginPage = templateEngine.renderPage(login, {
-    tabTitle: "login"
+const admin = templateEngine.readPage("./public/pages/login/admin.html")
+const adminPage = templateEngine.renderPage(admin, {
+    tabTitle: "login",
+    cssLink: `<link rel="stylesheet" type="text/css" href="/pages/login/admin.css">`
+
 })
 
 
-app.get("/frontpage", (req, res) => {
+app.get("/", (req, res) => {
     res.send(frontpagePage)
 })
 
-/*
-app.get("/", (req, res) => {
-    const fileContent = fs.readFileSync("./public/pages/login/login.html")
-    res.send(fileContent)
-})
 
- */
-
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
     res.sendFile(__dirname + "/public/pages/login/login.html")
 });
 
 app.post("/login", (req, res) => {
     const {username, password} = req.body;
     if (username === "john" && password === "zando") {
-        res.send(frontpagePage)
+        res.send(adminPage)
     } else {
         res.send({message: "invalid username or password"})
     }
@@ -103,6 +98,10 @@ app.get("/crud", (req, res) => {
 
 app.get("/ssr", (req, res) => {
     res.send(ssrPage)
+})
+
+app.post("/api/content", (req, res) => {
+    res.send(req.body)
 })
 
 

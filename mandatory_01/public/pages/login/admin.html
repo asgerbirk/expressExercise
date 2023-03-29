@@ -1,0 +1,14 @@
+<h2>In the admin panel you can add some new content.</h2>
+
+
+<form action="/api/content" method="POST">
+    <label>Subject</label>
+    <input placeholder="subject" id="subject" name="subject" value="My Opinion">
+    <label>Content</label>
+    <textarea cols="40" rows="10" id="content" name="content">sdfdsfds sdfdsf</textarea>
+    <button type="button" onclick="displayContent()">Send content</button>
+</form>
+
+<div id="displayContent"></div>
+
+<script src="/pages/login/admin.js"></script>
