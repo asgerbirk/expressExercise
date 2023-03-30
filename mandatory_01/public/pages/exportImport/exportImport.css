@@ -1,4 +1,4 @@
-.crud {
+.exportimport {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -6,7 +6,7 @@
     margin: 20px;
 }
 
-.fetch {
+.nodeimportexport {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -14,7 +14,7 @@
     margin: 20px;
 }
 
-.time {
+.xss {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -22,19 +22,15 @@
     margin: 20px;
 }
 
-#crudpicture {
-    width: 750px;
+
+#screenshot {
+    width: 400px;
 }
 
-#crudpicture1 {
-    width: 750px;
+#screenshot1 {
+    width: 400px;
 }
 
-#time {
-    width: 750px;
-}
-
-
-#fetch {
-    width: 750px;
+#screenshot2 {
+    width: 400px;
 }

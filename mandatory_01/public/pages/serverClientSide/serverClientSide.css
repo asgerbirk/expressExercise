@@ -1,0 +1,19 @@
+.redirect {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+.structure {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+}
+
+#screenshot {
+    width: 500px;
+}

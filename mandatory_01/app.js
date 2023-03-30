@@ -42,12 +42,14 @@ const crudPage = templateEngine.renderPage(crud, {
 
 const exportAndImport = templateEngine.readPage("./public/pages/exportImport/exportAndImport.html");
 const exportAndImportPage = templateEngine.renderPage(exportAndImport, {
-    tabTitle: "Export and import"
+    tabTitle: "Export and import",
+    cssLink: `<link rel="stylesheet" type="text/css" href="/pages/exportImport/exportImport.css">`
 })
 
 const serverClientSide = templateEngine.readPage("./public/pages/serverClientSide/serverClientSide.html");
 const serverClientSidePage = templateEngine.renderPage(serverClientSide, {
-    tabTitle: "Server client side"
+    tabTitle: "Server client side",
+    cssLink: `<link rel="stylesheet" type="text/css" href="/pages/serverClientSide/serverClientSide.css">`
 })
 
 const admin = templateEngine.readPage("./public/pages/login/admin.html")
@@ -67,10 +69,15 @@ app.get("/login", (req, res) => {
     res.sendFile(__dirname + "/public/pages/login/login.html")
 });
 
+app.get("/admin", (req, res) => {
+    res.send(adminPage)
+})
+
+
 app.post("/login", (req, res) => {
     const {username, password} = req.body;
     if (username === "john" && password === "zando") {
-        res.send(adminPage)
+        res.redirect("/admin")
     } else {
         res.send({message: "invalid username or password"})
     }
